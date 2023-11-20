@@ -21,8 +21,7 @@ const Navbar = () => {
     const navLink1 = createNavLink('home', 'Home');
     const navLink2 = createNavLink('menu', 'Menu');
     const navLink3 = createNavLink('contact', 'Contact');
-    const navLink4 = createNavLink('appetizers', 'Appetizers'); // New link
-
+    const navLink4 = createNavLink('appetizers', 'Appetizers');
     list.appendChild(navLink1);
     list.appendChild(navLink2);
     list.appendChild(navLink3);
