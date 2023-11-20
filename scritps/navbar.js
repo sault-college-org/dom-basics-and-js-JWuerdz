@@ -9,26 +9,24 @@ const Navbar = () => {
     const list = document.createElement('li');
     list.setAttribute('class', 'nav-item list-unstyled mx-2');
 
-    const navLink1 = document.createElement('a');
-    navLink1.setAttribute('id', 'home');
-    navLink1.setAttribute('class', 'mx-2');
-    navLink1.setAttribute('href', '#');
-    navLink1.innerHTML = 'Home';
+    const createNavLink = (id, text) => {
+      const navLink = document.createElement('a');
+      navLink.setAttribute('id', id);
+      navLink.setAttribute('class', 'mx-2');
+      navLink.setAttribute('href', '#');
+      navLink.innerHTML = text;
+      return navLink;
+    };
+
+    const navLink1 = createNavLink('home', 'Home');
+    const navLink2 = createNavLink('menu', 'Menu');
+    const navLink3 = createNavLink('contact', 'Contact');
+    const navLink4 = createNavLink('appetizers', 'Appetizers'); // New link
+
     list.appendChild(navLink1);
-
-    const navLink2 = document.createElement('a');
-    navLink2.setAttribute('id', 'menu');
-    navLink2.setAttribute('class', 'mx-2');
-    navLink2.setAttribute('href', '#');
-    navLink2.innerHTML = 'Menu';
     list.appendChild(navLink2);
-
-    const navLink3 = document.createElement('a');
-    navLink3.setAttribute('id', 'contact');
-    navLink3.setAttribute('class', 'mx-2');
-    navLink3.setAttribute('href', '#');
-    navLink3.innerHTML = 'Contact';
     list.appendChild(navLink3);
+    list.appendChild(navLink4);
 
     return list;
   };
