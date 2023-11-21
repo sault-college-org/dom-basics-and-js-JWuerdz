@@ -2,7 +2,7 @@ import Home from "./home.js";
 import Menu from "./menu.js";
 import Navbar from "./navbar.js";
 import Contact from "./contact.js";
-import Appetizers from "./appetizers.js";
+import Appetizers from "./app.js";
 
 const Index = () => {
   function italicsBody() {
