@@ -1,46 +1,69 @@
-const AppetizersMenu = () => {
-    const menuContent = document.createElement('div');
-    menuContent.setAttribute('class', 'container');
+const AppetizerItem = class {
+    constructor(id, title, description) {
+      this.id = id;
+      this.title = title;
+      this.description = description;
+    }
   
-    const menuHeader = document.createElement('h1');
-    menuHeader.setAttribute('class', 'text-center my-3 pt-5 mb-5');
-    menuHeader.innerHTML = 'APPETIZERS MENU';
+    createItem() {
+      const item = document.createElement("div");
+      item.setAttribute("class", `appetizer-item text-center ${this.id}`);
   
-    const menuList = document.createElement('ul');
-    menuList.setAttribute('class', 'menuList');
+      const itemContent = document.createElement("div");
+      itemContent.setAttribute("class", "appetizer-content");
   
-    const menuItems = () => {
-      const list = document.createElement('li');
-      list.setAttribute('class', 'nav-item list-unstyled mx-2');
+      const itemTitle = document.createElement("h1");
+      itemTitle.innerHTML = this.title;
+      itemTitle.setAttribute("class", "appetizer-title");
   
-      const appetizer1 = document.createElement('h1');
-      appetizer1.setAttribute('id', 'appetizer1');
-      appetizer1.setAttribute('class', 'text-center');
-      appetizer1.innerHTML = 'SPINACH DIP';
-      list.appendChild(appetizer1);
-      const appetizerParagraph1 = document.createElement('p');
-      appetizerParagraph1.setAttribute('class', 'my-3 pb-3');
-      appetizerParagraph1.innerHTML = 'Creamy spinach and artichoke dip served with tortilla chips.';
-      list.appendChild(appetizerParagraph1);
+      const itemDescription = document.createElement("p");
+      itemDescription.innerHTML = this.description;
+      itemDescription.setAttribute("class", "appetizer-description");
   
-      const appetizer2 = document.createElement('h1');
-      appetizer2.setAttribute('id', 'appetizer2');
-      appetizer2.setAttribute('class', 'text-center');
-      appetizer2.innerHTML = 'MOZZARELLA STICKS';
-      list.appendChild(appetizer2);
-      const appetizerParagraph2 = document.createElement('p');
-      appetizerParagraph2.setAttribute('class', 'my-3 pb-3');
-      appetizerParagraph2.innerHTML = 'Golden brown mozzarella sticks served with marinara sauce.';
-      list.appendChild(appetizerParagraph2);
-
-          return list;
-    };
+      itemContent.appendChild(itemTitle);
+      itemContent.appendChild(itemDescription);
   
-    menuContent.appendChild(menuHeader);
-    menuContent.appendChild(menuItems());
+      item.appendChild(itemContent);
   
-    return menuContent;
+      return item;
+    }
   };
   
-  export default AppetizersMenu;
+  const Appetizers = () => {
+    const appetizersContent = document.createElement("div");
+    appetizersContent.setAttribute("class", "appetizers container");
+  
+    const appetizersHeader = document.createElement("h1");
+    appetizersHeader.setAttribute("class", "text-center my-3 pt-5 mb-5");
+    appetizersHeader.innerHTML = "APPETIZERS";
+    appetizersContent.appendChild(appetizersHeader);
+  
+    const appetizersFlexBox = document.createElement("div");
+    appetizersFlexBox.setAttribute("class", "appetizers-flexbox");
+  
+    const spinachDip = new AppetizerItem(
+      "spinachDip",
+      "Spinach Dip",
+      "Our classic Spinach Dip is a crowd-pleaser! Creamy spinach and artichoke dip served with tortilla chips."
+    );
+    appetizersFlexBox.appendChild(spinachDip.createItem());
+  
+    const mozzaSticks = new AppetizerItem(
+      "mozzaSticks",
+      "Mozzarella Sticks",
+      "Golden brown and delicious Mozzarella Sticks. Served with marinara sauce for dipping."
+    );
+    appetizersFlexBox.appendChild(mozzaSticks.createItem());
+  
+    const nachos = new AppetizerItem(
+      "nachos",
+      "Nachos",
+      "Our most famous appetizer, the Nachos! This infamous nachos served on a platter are perfect for sharing with the whole party. And if the basic nachos are just not spicy enough to satisfy that spice craving, we also have the option to add all sorts of hot peppers. These peppers range from Jalapeño peppers at a meager 2,500 Scoville units all the way up to Thai peppers with a massive heat of 50,000 Scoville units."
+    );
+    appetizersFlexBox.appendChild(nachos.createItem());
+  
+    appetizersContent.appendChild(appetizersFlexBox);
+  
+    return appetizersContent;
+  };
   

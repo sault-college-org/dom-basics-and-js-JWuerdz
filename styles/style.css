@@ -112,7 +112,7 @@ body {
 }
 
 /* The ::before pseudo-element is used to overlay the background image */
-.mozza-sticks .appetizer-title::before {
+.mozzaSticks .appetizer-title::before {
   content: "";
   position: absolute;
   top: 0;
@@ -125,7 +125,7 @@ body {
   z-index: -1;
 }
 
-.spinach-dip .appetizer-title::before {
+.spinachDip .appetizer-title::before {
   content: "";
   position: absolute;
   top: 0;
