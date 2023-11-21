@@ -75,8 +75,8 @@ body {
   font-size: 50px;
 }
 
-#appetizer1{
-  background-image: url("imgs/Nachos.jpg");
+#appetizer1 {
+  background-image: url("/imgs/nachosimg.jpg");
   background-size: cover;
   width: 100%;
   height: 300px;
@@ -87,8 +87,8 @@ body {
   font-size: 50px;
 }
 
-#appetizer2{
-  background-image: url("imgs/spinach-dip.jpg");
+#appetizer2 {
+  background-image: url("/imgs/spinachdipimg.jpg");
   background-size: cover;
   width: 100%;
   height: 300px;
@@ -99,8 +99,8 @@ body {
   font-size: 50px;
 }
 
-#appetizer3{
-  background-image: url("imgs/Cheese-Sticks.jpg");
+#appetizer3 {
+  background-image: url("/imgs/mozzasticksimg.jpg");
   background-size: cover;
   width: 100%;
   height: 300px;
