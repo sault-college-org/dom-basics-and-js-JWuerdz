@@ -32,18 +32,8 @@ const AppetizersMenu = () => {
       appetizerParagraph2.setAttribute('class', 'my-3 pb-3');
       appetizerParagraph2.innerHTML = 'Golden brown mozzarella sticks served with marinara sauce.';
       list.appendChild(appetizerParagraph2);
-  
-      const appetizer3 = document.createElement('h1');
-      appetizer3.setAttribute('id', 'appetizer3');
-      appetizer3.setAttribute('class', 'text-center');
-      appetizer3.innerHTML = 'SPICY CHICKEN WINGS';
-      list.appendChild(appetizer3);
-      const appetizerParagraph3 = document.createElement('p');
-      appetizerParagraph3.setAttribute('class', 'my-3 pb-3');
-      appetizerParagraph3.innerHTML = 'Crispy chicken wings tossed in a spicy buffalo sauce, served with celery and blue cheese dressing.';
-      list.appendChild(appetizerParagraph3);
-  
-      return list;
+
+          return list;
     };
   
     menuContent.appendChild(menuHeader);
