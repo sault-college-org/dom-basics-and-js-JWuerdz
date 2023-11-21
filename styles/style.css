@@ -112,42 +112,38 @@ body {
 }
 
 /* The ::before pseudo-element is used to overlay the background image */
-#appetizer3 {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("imgs/Cheese-Sticks-5.jpg");
+#appetizer1{
+  background-image: url("imgs/Nachos.jpg");
   background-size: cover;
-  background-position: center;
-  z-index: -1;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  padding-top: 120px;
+  color: white;
+  text-shadow: black 2px 2px;
+  font-size: 50px;
 }
 
-#appetizer2 {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("imgs/spinach-dip-5.jpg");
+#appetizer2{
+  background-image: url("imgs/spinach-dip.jpg");
   background-size: cover;
-  background-position: center;
-  z-index: -1;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  padding-top: 120px;
+  color: white;
+  text-shadow: black 2px 2px;
+  font-size: 50px;
 }
 
-#appetizer1 {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("imgs/Nachos-Perfectly-Melty-2.jpg");
+#appetizer3{
+  background-image: url("imgs/Cheese-Sticks.jpg");
   background-size: cover;
-  background-position: center;
-  z-index: -1;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  padding-top: 120px;
+  color: white;
+  text-shadow: black 2px 2px;
+  font-size: 50px;
 }
-
