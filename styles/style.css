@@ -3,7 +3,7 @@ body {
 }
 
 .homepage {
-  background-image: url("/imgs/dinnerbg.jpg");
+  background-image: url('/imgs/dinnerbg.jpg');
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -40,73 +40,60 @@ body {
 }
 
 #menu1 {
-  background-image: url("/imgs/chickenimg.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  padding-top: 120px;
-  color: white;
-  text-shadow: black 2px 2px;
-  font-size: 50px;
+  background-image: url('/imgs/chickenimg.jpg');
+  /* Replace with nachos image */
 }
 
 #menu2 {
-  background-image: url("/imgs/barbecueimg.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  padding-top: 120px;
-  color: white;
-  text-shadow: black 2px 2px;
-  font-size: 50px;
+  background-image: url('/imgs/barbecueimg.jpg');
+  /* Replace with spinach dip image */
 }
 
 #menu3 {
-  background-image: url("/imgs/fishimg.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  padding-top: 120px;
-  color: white;
-  text-shadow: black 2px 2px;
-  font-size: 50px;
+  background-image: url('/imgs/fishimg.jpg');
+  /* Replace with mozzarella sticks image */
+}
+
+/* PART 1 */
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.item-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: auto;
+}
+
+.appetizer-list {
+  padding: 0;
+  margin: auto 40px;
+}
+
+.appetizer-list-item {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
 }
 
 #appetizer1 {
-  background-image: url("/imgs/nachosimg.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  padding-top: 120px;
-  color: white;
-  text-shadow: black 2px 2px;
-  font-size: 50px;
+  background-image: url('/imgs/nachosimg.jpg');
+ 
 }
 
 #appetizer2 {
-  background-image: url("/imgs/spinachdipimg.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  padding-top: 120px;
-  color: white;
-  text-shadow: black 2px 2px;
-  font-size: 50px;
+  background-image: url('/imgs/spinachdipimg.jpg');
+  
 }
 
 #appetizer3 {
-  background-image: url("/imgs/mozzasticksimg.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  padding-top: 120px;
-  color: white;
-  text-shadow: black 2px 2px;
-  font-size: 50px;
+  background-image: url('/imgs/mozzasticksimg.jpg');
+  
+}
+
+.appetizer-text {
+  margin: auto 40px;
 }
