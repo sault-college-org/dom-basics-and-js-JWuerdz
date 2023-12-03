@@ -7,7 +7,7 @@ const OrderOnline = () => {
     orderContent.appendChild(orderHeader);
   
     const orderForm = document.createElement("form");
-    orderForm.setAttribute("action", "https://formspree.io/f/meqbbloy");
+    orderForm.setAttribute("action", "https://formspree.io/f/xdorpvbg");
     orderForm.setAttribute("method", "POST");
   
     const nameLabel = document.createElement("label");
