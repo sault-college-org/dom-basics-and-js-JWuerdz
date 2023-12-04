@@ -59,7 +59,7 @@ const Appetizer = () => {
   const nachos = new AppetizerItem(
     "nachos",
     "Nachos",
-    "NACHOS AND CHEESE BABYOur most famous appetizer, the Nachos! This infamous nachos served on a platter are perfect for sharing with the whole party. And if the basic nachos are just not spicy enough to satisfy that spice craving, we also have the option to add all sorts of hot peppers. These peppers range from Jalapeño peppers at a meager 2,500 Scoville units all the way up to Thai peppers with a massive heat of 50,000 Scoville units..",
+    "Our most famous appetizer, the Nachos! This infamous nachos served on a platter are perfect for sharing with the whole party. And if the basic nachos are just not spicy enough to satisfy that spice craving, we also have the option to add all sorts of hot peppers. These peppers range from Jalapeño peppers at a meager 2,500 Scoville units all the way up to Thai peppers with a massive heat of 50,000 Scoville units..",
     "imgs/nachosimg.jpg"
   );
   appetizerFlexBox.appendChild(nachos.createItem());
@@ -67,7 +67,7 @@ const Appetizer = () => {
   const spinachDip = new AppetizerItem(
     "spinach-dip",
     "Spinach Dip",
-    "Creamy spinach dipOur classic Spinach Dip is a crowd-pleaser! Creamy spinach and artichoke dip served with tortilla chips.",
+    "Our classic Spinach Dip is a crowd-pleaser! Creamy spinach and artichoke dip served with tortilla chips.",
     "imgs/spinachdipimg.jpg"
   );
   appetizerFlexBox.appendChild(spinachDip.createItem());
