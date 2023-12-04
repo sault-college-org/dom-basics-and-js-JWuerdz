@@ -24,10 +24,10 @@ const Navbar = () => {
     list.appendChild(navLink2);
 
     const navLink3 = document.createElement("a");
-    navLink3.setAttribute("id", "appetizers");
+    navLink3.setAttribute("id", "appetizer");
     navLink3.setAttribute("class", "mx-2");
     navLink3.setAttribute("href", "#");
-    navLink3.innerHTML = "Appetizers";
+    navLink3.innerHTML = "Appetizer";
     list.appendChild(navLink3);
 
     const navLink4 = document.createElement("a");
@@ -36,6 +36,20 @@ const Navbar = () => {
     navLink4.setAttribute("href", "#");
     navLink4.innerHTML = "Contact";
     list.appendChild(navLink4);
+
+    const navLink5 = document.createElement("a");
+    navLink5.setAttribute("id", "online");
+    navLink5.setAttribute("class", "mx-2");
+    navLink5.setAttribute("href", "#");
+    navLink5.innerHTML = "Order Online";
+    list.appendChild(navLink5);
+
+    const navLink6 = document.createElement("a");
+    navLink6.setAttribute("id", "food");
+    navLink6.setAttribute("class", "mx-2");
+    navLink6.setAttribute("href", "#");
+    navLink6.innerHTML = "Food Gallery";
+    list.appendChild(navLink6);
 
     return list;
   };
@@ -47,3 +61,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

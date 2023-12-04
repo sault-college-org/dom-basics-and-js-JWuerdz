@@ -2,6 +2,70 @@ body {
   padding-top: 25px;
 }
 
+
+#menu-toggle,
+.sandwich-icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sandwich-icon {
+    display: block;
+    width: 40px;
+    height: 25px;
+    border-top: 5px solid #333; 
+    cursor: pointer;
+    margin: 1em auto;
+    position: relative;
+    transition: transform 0.3s ease; 
+  }
+
+  .sandwich-icon::before,
+  .sandwich-icon::after {
+    content: "";
+    display: block;
+    width: 40px;
+    border-top: 5px solid #333; 
+    position: absolute;
+    transition: transform 0.3s ease; 
+  }
+
+  .sandwich-icon::before {
+    top: 5px;
+  }
+
+  .sandwich-icon::after {
+    top: 15px;
+  }
+
+  
+  #menu-toggle:checked + .sandwich-icon::before {
+    transform: rotate(-45deg) translate(-5px, 0);
+  }
+
+  
+  #menu-toggle:checked + .sandwich-icon::after {
+    transform: rotate(45deg) translate(-5px, 0);
+  }
+
+  
+  #menu-toggle:checked + .sandwich-icon + ul {
+    height: auto;
+  }
+
+  ul {
+    overflow: hidden;
+    height: 0;
+    transition: height 200ms ease;
+  }
+
+  #menu-toggle:checked + .sandwich-icon + ul {
+    height: auto;
+  }
+}
+
+
+
 .homepage {
   background-image: url("/imgs/dinnerbg.jpg");
   background-position: center;
@@ -40,7 +104,7 @@ body {
 }
 
 #menu1 {
-  background-image: url("/imgs/chickenimg.jpg");
+  background-image: url('/imgs/chickenimg.jpg');
   background-size: cover;
   width: 100%;
   height: 300px;
@@ -52,7 +116,7 @@ body {
 }
 
 #menu2 {
-  background-image: url("/imgs/barbecueimg.jpg");
+  background-image: url('/imgs/barbecueimg.jpg');
   background-size: cover;
   width: 100%;
   height: 300px;
@@ -64,7 +128,7 @@ body {
 }
 
 #menu3 {
-  background-image: url("/imgs/fishimg.jpg");
+  background-image: url('/imgs/fishimg.jpg');
   background-size: cover;
   width: 100%;
   height: 300px;
@@ -73,40 +137,29 @@ body {
   color: white;
   text-shadow: black 2px 2px;
   font-size: 50px;
+} 
+
+.gallery-title {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
 }
 
-#appetizer1 {
-  background-image: url("/imgs/nachosimg.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  padding-top: 120px;
-  color: white;
-  text-shadow: black 2px 2px;
-  font-size: 50px;
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
-#appetizer2 {
-  background-image: url("/imgs/spinachdipimg.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  padding-top: 120px;
-  color: white;
-  text-shadow: black 2px 2px;
-  font-size: 50px;
+.order-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
 }
 
-#appetizer3 {
-  background-image: url("/imgs/mozzasticksimg.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  padding-top: 120px;
-  color: white;
-  text-shadow: black 2px 2px;
-  font-size: 50px;
-}
+
+
+
