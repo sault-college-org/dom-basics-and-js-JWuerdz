@@ -103,9 +103,8 @@ body {
   color: rgb(211, 170, 170);
 }
 
-#menu1,
-#menu2,
-#menu3 {
+#menu1 {
+  background-image: url('/imgs/chickenimg.jpg');
   background-size: cover;
   width: 100%;
   height: 300px;
@@ -115,6 +114,30 @@ body {
   text-shadow: black 2px 2px;
   font-size: 50px;
 }
+
+#menu2 {
+  background-image: url('/imgs/barbecueimg.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  padding-top: 120px;
+  color: white;
+  text-shadow: black 2px 2px;
+  font-size: 50px;
+}
+
+#menu3 {
+  background-image: url('/imgs/fishimg.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  padding-top: 120px;
+  color: white;
+  text-shadow: black 2px 2px;
+  font-size: 50px;
+} 
 
 .gallery-title {
   text-align: center;
