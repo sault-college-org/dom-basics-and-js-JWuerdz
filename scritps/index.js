@@ -2,8 +2,8 @@ import Home from "./home.js";
 import Menu from "./menu.js";
 import Navbar from "./navbar.js";
 import Contact from "./contact.js";
-import Appetizer from "./appetizer.js";
-import OrderOnline from "./orderonline.js";
+import Appetizer from "./appetizers.js";
+import OrderOnline from "./onlineorder.js";
 import FoodGallery from "./food.js";
 
 const Index = () => {
